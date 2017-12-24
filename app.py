@@ -1,3 +1,4 @@
+
 """
 This script runs the application using a development server.
 It contains the definition of routes and views for the application.
@@ -16,7 +17,7 @@ app = Flask(__name__)
 def index():
     """Renders a sample page."""
     return "Hello World!"
-"""
+
 if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
@@ -25,5 +26,5 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5555
     app.run(HOST, PORT)
-"""
-app.run(debug=True)
+
+#app.run(debug=True)
